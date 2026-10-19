@@ -32,6 +32,12 @@ An analysis of U.S. trade in semiconductor devices (HS 8541) and integrated circ
 - **Analysis:** I calculated monthly totals, a same-period comparison (Jan–Aug vs. Jan–Aug), surplus and deficit months, partner rankings, and growth indexed to January 2025 = 100.
 - **Tools:** Python, pandas, matplotlib, seaborn, Plotly Express and Streamlit.
 
+### Time periods used
+
+- **Year-over-year comparisons** (percent changes, trade balance shift, production change) use **January–August 2025 vs. January–August 2026**, so both periods cover the same 8 months. September–December 2025 are left out of these comparisons because the 2026 data ends in August.
+- **Trend charts and summary statistics** use all 20 months (Jan 2025–Aug 2026) to show month-to-month movement.
+- **Partner rankings** use the latest month, August 2026.
+
 ## Run the dashboard locally
 
 ```bash

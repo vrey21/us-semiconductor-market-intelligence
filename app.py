@@ -234,6 +234,10 @@ st.write(
 st.caption(
     "Trade values are reported in U.S. dollars. Trade balance = exports minus imports."
 )
+st.caption(
+    "Year-over-year comparisons use January–August of each year so both periods cover "
+    "the same months. Trend charts show all 20 months (Jan 2025–Aug 2026)."
+)
 
 total_imports = selected_month_data.loc[
     selected_month_data["trade_flow"] == "Imports", "trade_value_usd"
