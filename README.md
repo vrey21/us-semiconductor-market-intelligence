@@ -1,6 +1,6 @@
 # U.S. Semiconductor Market Intelligence
 
-**Live dashboard:** _add your Streamlit link here after deploying_
+**Live dashboard:** [Open the interactive Streamlit dashboard](https://us-semiconductor-market-intelligence-vzkc2ijowqqttrdxoztrhc.streamlit.app/)
 
 An analysis of U.S. trade in semiconductor devices (HS 8541) and integrated circuits (HS 8542), compared with U.S. semiconductor manufacturing output. It covers January 2025 through August 2026.
 
