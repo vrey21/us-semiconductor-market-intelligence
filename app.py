@@ -403,13 +403,6 @@ trend_fig.update_xaxes(
     automargin=True,
 )
 trend_fig.update_yaxes(showgrid=True, gridcolor="#E2E8F0")
-# Add a dotted vertical line for the month chosen in the sidebar
-trend_fig.add_vline(
-    x=pd.to_datetime(selected_month),
-    line_dash="dot",
-    line_color="#64748B",
-    line_width=2,
-)
 st.plotly_chart(trend_fig, width="stretch")
 
 
