@@ -403,6 +403,10 @@ trend_fig.update_xaxes(
     automargin=True,
 )
 trend_fig.update_yaxes(showgrid=True, gridcolor="#E2E8F0")
+
+# Clean hover labels, for example "Exports: $4.98B"
+trend_fig.update_traces(hovertemplate="%{fullData.name}: $%{y:.2f}B<extra></extra>")
+trend_fig.update_xaxes(hoverformat="%B %Y")
 st.plotly_chart(trend_fig, width="stretch")
 
 
@@ -453,6 +457,11 @@ balance_fig = px.bar(
 
 # Add the zero line: bars above it are surpluses; below it are deficits
 balance_fig.add_hline(y=0, line_color="#64748B", line_width=1)
+
+# Clean hover labels, for example "August 2026 / Trade balance: -$1.21B"
+balance_fig.update_traces(
+    hovertemplate="<b>%{x|%B %Y}</b><br>Trade balance: %{y:$.2f}B<extra></extra>"
+)
 
 # Make the chart match the rest of your dashboard
 balance_fig.update_layout(
