@@ -27,6 +27,7 @@ An analysis of U.S. trade in semiconductor devices (HS 8541) and integrated circ
 
 ## Methods
 
+- **Data collection:** I used the U.S. Census International Trade API to retrieve monthly semiconductor trade records (HS 8541 and HS 8542) and downloaded the production index from FRED. I saved the results as CSV files in the `data` folder, so the notebook and dashboard run without direct API access and anyone can reproduce the analysis on the same data.
 - **Data cleaning:** The Census files include regional and group totals (for example Asia, ASEAN and CAFTA-DR) plus an all-countries total. Keeping them would double-count trade. I kept only individual-country rows, meaning four-digit country codes that don't start with 0, and only positive trade values. That left 7,061 records.
 - **Validation:** I summed the cleaned country rows for each month, product and trade flow, then compared them with Census's official totals. The largest difference was **$0**.
 - **Analysis:** I calculated monthly totals, a same-period comparison (Jan–Aug vs. Jan–Aug), surplus and deficit months, partner rankings, and growth indexed to January 2025 = 100.
